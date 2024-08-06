@@ -1,14 +1,18 @@
----
-page_type: sample
-name: Holographic Remoting Samples
-description: Samples showing how to write an application for streaming content to a Microsoft HoloLens 2 or PC running Windows Mixed Reality with the Mixed Reality or OpenXR runtime. 
-languages:
-- cpp
-- html
-products:
-- windows-mixed-reality
-- hololens
----
+# ReplayAR
+This project was built off of the [Holographic Remoting Sample](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples) from Microsoft, with the original README shown below.
+
+This is built under the ```remote``` sample for desktop on Holographic Remoting detailed below, modified to use the following arguments:
+```[-noreplay] [-writepose <output_filepath>] <hololens_ip> <input_trace_filepath>```
+
+## Arguments
+```-noreplay``` (optional): Flag to disable replay.
+
+```-writepose <output_filepath>``` (optional): Flag to write pose data to the specified output file. This can be used to record a trace from the Hololens 2 in the format of ```timestamp tx ty tz qx qy qz qw```. If this flag is present, it must be followed by a valid file path.
+
+```<hololens_ip>``` (required): The IP address of the HoloLens device.
+
+```<input_trace_filepath>``` (required): The file path to the input trace file.
+
 
 # Holographic Remoting Samples
 
